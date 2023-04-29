@@ -16,6 +16,20 @@ class Program
             if (yourNumber == magicNumber)
             {
                 Console.WriteLine("You guessed it!");
+                Console.Write("Do you want to play again? ");
+                string response = Console.ReadLine();
+                if (response == "yes")
+                {
+                    while (yourNumber != magicNumber)
+                    {
+                        Console.Write("What is your guess? ");
+                        yourNumber = int.Parse(Console.ReadLine());
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Thank you for playing the guess game. ");
+                }
             }
             else if (yourNumber < magicNumber)
             {
