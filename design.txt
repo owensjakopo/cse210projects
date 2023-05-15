@@ -1,0 +1,34 @@
+Class: Job
+    . Responsibility: Job
+    - Keeps track of the company, job title, start year and end eand year.
+
+    . Behaviors:
+    - Displays the job information in the format "Job Title (Company) StartYear-EndYear"
+--------------------------------------------------
+Job
+--------------------------------------------------
+_company : string
+_jobTitle : string
+_startYear : int
+_endYear : int
+
+--------------------------------------------------
+Display() : void
+--------------------------------------------------
+
+Class: Resume
+    . Responsibilities:
+    - Keeps track of the person's name and a list of their jobs.
+    
+    . Behaviors:
+    - Displays the resume, which shows the name first, followed by displaying each one of the jobs.
+
+--------------------------------------------------
+Resume
+--------------------------------------------------
+_name : string
+_jobs : List<Job>
+
+--------------------------------------------------
+Display() : void
+--------------------------------------------------
